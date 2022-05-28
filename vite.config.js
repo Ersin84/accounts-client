@@ -13,7 +13,6 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    origin: 'https://accounts.myren.xyz',
     host: 'dev.accounts.myren.xyz',
     https: true,
   }

@@ -7,8 +7,9 @@ const apiBaseUrl = `https://accounts.myren.xyz/api/${apiVersion}/`
 export const Axios = axios.create({
   baseURL: apiBaseUrl,
   headers: {
-    'Content-Type': 'application/json'
-  }
+    'Content-Type': 'application/json',
+  },
+  withCredentials: true,
 })
 
 /* Axios.interceptors.request.use(config => {
